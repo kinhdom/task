@@ -1,0 +1,14 @@
+.task{
+    border: 1px solid pink;
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+    
+}
+.button{
+    padding: 2px;
+}
+.input{
+    margin: 5px;
+    margin-bottom: 50px;
+}

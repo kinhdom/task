@@ -1,0 +1,20 @@
+<div class="container">
+  <form (submit)="addTask($event)" *ngIf="!isEdit">
+    <div class="form-group input">
+      <input class="form-control form-control-lg" type="text" placeholder="enter task" [(ngModel)]="title" name="title">
+    </div>
+  </form>
+  <div *ngFor="let task of tasks">
+    <div class="row task">
+      <div class="col-10">
+        <p>
+          {{task.name}}
+        </p>
+      </div>
+      <div class="col-1 button">
+        <button type="button" class="btn btn-danger" (click)="delete($event)" id="{{task._id}}">Delete</button>
+      </div>
+    </div>
+  </div>
+
+</div>
